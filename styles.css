@@ -3,12 +3,13 @@
 
 :root{
     --maroon: #a00000;
+    --light-maroon: #ED0000;
     --abuabu: #666666;
     --white: #fff;
-    --black: #222;
+    --black: #000;
     --light-black: #666;
     --light-white: #f5f5f5;
-    --dark-bg: rgba(0,0,0,0.7);
+    --dark-bg: rgba(0,0,0,0.5);
     --border: .1rem solid #aaa;
     --box-shadow: 0 .5rem 1rem rgba(0,0,0,0.1);
 }
@@ -29,19 +30,21 @@
 
 html{
     font-size: 62.5%;
-    overflow-x: hidden;
     scroll-behavior: smooth;
-    scroll-padding-top: 6rem;
+    scroll-padding-top: 20rem;
 }
 
 body{
     overflow-x: hidden;
+    background: var(--white);
 }
-html::-webkit-scrollbar-track{
-    background-color: var(--white);
+html::-webkit-scrollbar{
+    background-color: #aaa;
+    width: 1rem;
 }
 html::-webkit-scrollbar-thumb{
-    background-color: var(--maroon);
+    background-color: var(--light-maroon);
+    border-radius: 1rem;
 }
 a{
     text-decoration: none;
@@ -52,23 +55,23 @@ section{
 }
 
 .header{
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+    position: sticky;
+    padding: 2rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
     box-shadow: var(--box-shadow);
-    position: sticky;
-    top: 0; left:0; right: 0;
-    background: var(--white);
+    top: 0;
     z-index: 1000;
+    background: var(--white);
 }
 
+
 .header .logo{
-    font-weight: bold;
-    font-size: 2.5rem;
+    font-weight: 800;
+    font-size: 2rem;
     color: var(--maroon);
-    letter-spacing: 5px;
+    letter-spacing: 2px;
     cursor: pointer;
     /* center logo vertically */
     display: flex;
@@ -76,7 +79,7 @@ section{
 }
 
 .header .logo img{
-    height: 4rem;
+    height: 3rem;
     margin-right: 1.5rem;
     border-radius: 50%;
 }
@@ -86,9 +89,9 @@ section{
 }
 
 .header .navbar a{ 
-    font-size: 2rem;
+    font-size: 1.5rem;
     margin-left: 2rem;
-    color: var(--light-black);
+    color: var(--black);
 }
 
 .header .navbar .order-now{
@@ -96,16 +99,14 @@ section{
     color: var(--white);
     padding: 1rem 2rem;
     margin-left: 10rem;
-    border-radius: 1rem;
-    font-size: 2rem;
+    font-size: 1.5rem;
     cursor: pointer;
     text-align: center;
 }
 
 .header .navbar .order-now:hover{
-    background-color: var(--light-white);
-    color: var(--maroon);
-
+    background-color: var(--light-maroon);
+    color: var(--white);
 }
 
 .header .navbar a:hover{
@@ -128,6 +129,10 @@ section{
     color: var(--maroon);
 }
 
+.header .navbar .focus{
+    color: var(--maroon);
+    border-bottom: 2px solid var(--maroon);
+}
 .home{
     padding: 0;
 }
@@ -143,6 +148,7 @@ section{
     justify-content: center;
     align-items: center;
     transition: 2s;
+
 }
 
 .home .slide::before{
@@ -153,6 +159,12 @@ section{
     width: 100%;
     background: var(--dark-bg);
     z-index: -1;
+    transition: 2s;
+}
+
+/* remove darken when hover */
+.home .slide:hover::before{
+    background: none;
 }
 
 .home .slide .content{
@@ -166,18 +178,21 @@ section{
 }
 
 .home .slide .content span{
-    font-size: 3rem;
+    font-size: 2rem;
     color: var(--light-white);
     display: block;
-    margin-bottom: 5rem;
-    letter-spacing: 2rem;
+    margin-bottom: 40rem;
+    letter-spacing: 2.5rem;
+    text-transform: uppercase;
+
 }
 
 .home .slide .content h3{
-    font-size: 8vw;
+    font-size: 5vw;
     color: var(--white);
     display: block;
-    margin-bottom: 5rem;
+    margin-bottom: 3rem;
+
 }
 
 .home .slide .content p{
@@ -186,6 +201,7 @@ section{
     color: var(--light-white);
     display: block;
     margin-bottom: 5rem;
+
 }
 
 .home .w{
@@ -198,12 +214,224 @@ section{
     display: none;
 }
 
+.hidden {
+    display: none;
+}
+
+.about{
+    padding: 10rem 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--white);
+}
+
+
+.about .content{
+    width: 70%;
+}
+
+.about .content h3{
+    font-size: 3rem;
+    color: var(--maroon);
+}
+
+.about .content p{
+    font-size: 1.5rem;
+    color: var(--light-black);
+    margin-bottom: 2rem;
+    text-align: justify;
+}
+
+.about .content .readmore{
+    background-color: var(--maroon);
+    color: var(--white);
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    text-align: center;
+}
+
+.about .content .readmore:hover{
+    background-color: var(--light-maroon);
+    color: var(--light-white);
+}
+
+.about .image{
+    width: 30%;
+    padding: 5rem;
+}
+.about .image img{
+    width: 100%;
+    height: 100%;
+}
+
+#product1 .pro-container{
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 20px;
+    flex-wrap: wrap;
+
+}
+
+#product1{
+    text-align: center;
+    background: var(--light-white);
+}
+
+#product1 h2{
+    font-size: 3rem;
+    color: var(--maroon);
+
+}
+#product1 .pro{
+    width: 23%;
+    min-width: 250px;
+    padding: 10px 12px;
+    border: 2px solid var(--light-white);
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: var(--box-shadow);
+    margin : 15px 0;
+}
+#product1 .pro:hover{
+    box-shadow: 20px 20px 30px rgba(0,0,0,0.05);
+}
+#product1 .pro img{
+    width: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+#product1 .pro .desc{
+    text-align: start;
+    padding: 10px 0;
+}
+#product1 .pro .desc span{
+    font-size: 1.2rem;
+    color: var(--abuabu);
+}
+#product1 .pro .desc p{
+    font-family: 'Helvetica', sans-serif;
+    font-size: 1.2rem;
+    color: var(--light-black);
+    margin-bottom: 20px;
+}
+#product1 .pro .desc h5{
+    font-size: 1.5rem;
+    color: var(--maroon);
+    font-weight: 600;
+}
+#product1 .pro .desc .star{
+    font-size: 1.5rem;
+    color: gold;
+    font-weight: 600;
+    margin : 5px 0;
+}
+#product1 .pro .desc .readmore{
+    background-color: var(--maroon);
+    padding: 5px 10px;
+    border-radius: 10px;
+    margin-top: 20px;
+    font-size: 1.2rem;
+    color: var(--light-white);
+    margin : 5px 0;
+    /* center */
+    display: flex;
+    justify-content: center;
+}
+
+#product1 .pro .desc .readmore:hover{
+    background-color: var(--light-maroon);
+    color: var(--light-white);
+}
+
+.footer{
+    padding: 5rem 10%;
+    background: var(--black);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: auto;
+
+}
+
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background: var(--black);
+    color: var(--light-white);
+}
+
+footer .col{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    width: 50%;
+}
+
+.footer .logo{
+    font-weight: 800;
+    font-size: 2rem;
+    color: var(--maroon);
+    letter-spacing: 2px;
+    cursor: pointer;
+    /* center logo vertically */
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.footer .logo img{
+    height: 3rem;
+    margin-right: 1.5rem;
+    border-radius: 50%;
+}
+
+.footer .logo span{
+    color: var(--abuabu);
+}
+
+footer .col h4{
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+footer .col a{
+    font-size: 1.5rem;
+    color: var(--light-white);
+    margin-bottom: 10px;
+}
+
+footer .col a:hover{
+    color: var(--maroon);
+}
+
+footer .col .follow{
+    margin-top: 20px;
+}
+footer .col .follow i{
+    margin-right: 20px;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+footer .col .follow i:hover{
+    color: var(--maroon);
+}
+
+footer .col p{
+    font-size: 1.5rem;
+    color: var(--light-white);
+    margin-bottom: 10px;
+}
 /* manual navigation slider */
 
 .home .manual-slide{
     position: absolute;
     z-index: 100;
-    bottom: 15rem;
+    bottom: 17rem;
     left: 50%;
     transform: translateX(-50%);
     display: flex;
@@ -242,7 +470,7 @@ section{
     transform: translateX(-50%);
     justify-content: center;
     align-items: center;
-    bottom: 15rem;
+    bottom: 17rem;
     left: 50%;
 }
 
@@ -268,6 +496,8 @@ section{
 
 
 
+
+
 /* media queries */
 @media (max-width:1200px){
 
@@ -281,11 +511,11 @@ section{
         padding: 3rem 2rem;
     }
     html{
-        font-size: 55%;
+        font-size: 50%;
     }
 }
 
-@media (max-width:768px){
+@media (max-width:825px){
     .header .navbar{
         position: absolute;
         top: 99%; left: 0; right: 0;
@@ -298,13 +528,24 @@ section{
     }
     .header .navbar a{
         display: block;
-        margin: 2rem;
+        margin: 1.5rem;
     }
     .header .navbar .order-now{
-        margin: 2rem;
+        margin: 1.5rem;
     }
     #menu-btn{
         display: inline-block;
+    }
+    .about .image{
+        display: none;
+    }
+    .about .content{
+        width: 100%;
+    }
+    #product1 .pro{
+        flex-direction: column;
+        align-items: center;
+        width: 90%;
     }
 }
 
@@ -312,5 +553,11 @@ section{
 
     html{
         font-size: 45%;
+    }
+    .about .image{
+        display: none;
+    }
+    .about .content{
+        width: 100%;
     }
 }

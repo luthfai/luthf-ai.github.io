@@ -1,13 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aido Group</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />    <!-- link app.js -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" /> <!-- link app.js -->
 </head>
+
 <body>
     <!-- header start -->
     <section class="header">
@@ -17,11 +21,11 @@
         </a>
 
         <nav class="navbar">
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#services">Services</a>
-            <a href="#contact">Contact</a>
-            <a href="#services" class="order-now">Order Now</a>
+            <a href="#home" class="homeBtn focus">Home</a>
+            <a href="#about" class="aboutBtn">About</a>
+            <a href="#product1" class="servicesBtn">Services</a>
+            <a href="#contact" class="contactBtn">Contact</a>
+            <a href="#order" class="order-now">Order Now</a>
         </nav>
 
         <div id="menu-btn" class="fas fa-bars"></div>
@@ -38,27 +42,36 @@
                 <input type="radio" name="radio-btn" id="radio3">
 
                 <!-- slides content -->
-                <div class="slide first" style="background: url(banner.jpg) no-repeat;">
+                <div class="slide first" style="background: url(1.jpeg) no-repeat;">
                     <div class="content">
                         <span>Photography</span>
                         <h3>Wedding Photography</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At reiciendis, sunt quaerat cumque autem fuga impedit neque velit dolor, voluptas repellendus fugiat vel ad illo quidem qui assumenda nemo laborum accusantium exercitationem quis officiis unde aliquid odit. Esse, qui dolorem?</p>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos cupiditate, sunt quod quia
+                            nesciunt amet ratione quibusdam repellat qui voluptatibus inventore quas soluta saepe, fugit
+                            porro nulla harum odit? Asperiores debitis sequi velit animi quos aperiam error consequuntur
+                            cumque a.</p>
                     </div>
                 </div>
 
-                <div class="slide" style="background: url(banner.jpg) no-repeat;">
+                <div class="slide" style="background: url(2.jpeg) no-repeat;">
                     <div class="content">
-                        <span>Photography</span>
-                        <h3>Wedding Photography</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae.</p>
+                        <span>Photostudio</span>
+                        <h3>Indoor Photo</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex rem delectus aspernatur,
+                            voluptates officiis exercitationem consequuntur odit accusantium facere porro voluptatibus.
+                            Consequatur neque illum laudantium laborum excepturi molestias est quisquam, architecto hic
+                            optio ipsam fugiat ad sed voluptatem aliquam rem!</p>
                     </div>
                 </div>
 
-                <div class="slide" style="background: url(banner.jpg) no-repeat;">
+                <div class="slide" style="background: url(3.jpeg) no-repeat;">
                     <div class="content">
-                        <span>Photography</span>
-                        <h3>Wedding Photography</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae.</p>
+                        <span>Videography</span>
+                        <h3>Wedding Cinematic</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam ipsa accusamus rerum est
+                            commodi, odit aspernatur, iste quia accusantium quasi architecto numquam. Rerum non
+                            voluptatem repellendus iure dolore veniam quo ratione aliquid corporis! Obcaecati dicta
+                            saepe a ducimus, porro voluptatem.</p>
                     </div>
                 </div>
 
@@ -79,6 +92,200 @@
             </div>
         </div>
     </section>
+    <!-- home end -->
+    <!-- about start -->
+    <section class="about" id="about">
+        <div class="image">
+            <img src="aidogroup.png" alt="logo">
+        </div>
+        <div class="content">
+            <h3>About Us</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus sed excepturi asperiores,
+                veritatis, libero necessitatibus provident explicabo dolorem voluptate ipsum alias consectetur vel fuga
+                dignissimos maiores, error distinctio expedita obcaecati.</p>
+            <a href="#about" class="readmore">Read More</a>
+        </div>
+    </section>
+    <!-- about end -->
+    <!-- services start -->
+
+    <section id="product1" class="section-p1">
+        <h2>Featured Products</h2>
+        <p>Produk dan Jasa Kami</p>
+        <div class="pro-container">
+            <div class="pro">
+                <img src="aidogroup.jpg" alt="">
+                <div class="desc">
+                    <span>Wedding Photography</span>
+                    <h5>Wedding Paket 1</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae.</p>
+                    <!-- read more -->
+                    <a href="#product1" class="readmore">Read More</a>
+                </div>
+            </div>
+            <div class="pro">
+                <img src="aidogroup.jpg" alt="">
+                <div class="desc">
+                    <span>Wedding Photography</span>
+                    <h5>Wedding Paket 1</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae.</p>
+                    <!-- read more -->
+                    <a href="#product1" class="readmore">Read More</a>
+                </div>
+            </div>
+            <div class="pro">
+                <img src="aidogroup.jpg" alt="">
+                <div class="desc">
+                    <span>Wedding Photography</span>
+                    <h5>Wedding Paket 1</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae.</p>
+                    <!-- read more -->
+                    <a href="#product1" class="readmore">Read More</a>
+                </div>
+            </div>
+            <div class="pro">
+                <img src="aidogroup.jpg" alt="">
+                <div class="desc">
+                    <span>Wedding Photography</span>
+                    <h5>Wedding Paket 1</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae.</p>
+                    <!-- read more -->
+                    <a href="#product1" class="readmore">Read More</a>
+                </div>
+            </div>
+            <div class="pro">
+                <img src="aidogroup.jpg" alt="">
+                <div class="desc">
+                    <span>Wedding Photography</span>
+                    <h5>Wedding Paket 1</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae.</p>
+                    <!-- read more -->
+                    <a href="#product1" class="readmore">Read More</a>
+                </div>
+            </div>
+            <div class="pro">
+                <img src="aidogroup.jpg" alt="">
+                <div class="desc">
+                    <span>Wedding Photography</span>
+                    <h5>Wedding Paket 1</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae.</p>
+                    <!-- read more -->
+                    <a href="#product1" class="readmore">Read More</a>
+                </div>
+            </div>
+            <div class="pro">
+                <img src="aidogroup.jpg" alt="">
+                <div class="desc">
+                    <span>Wedding Photography</span>
+                    <h5>Wedding Paket 1</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae.</p>
+                    <!-- read more -->
+                    <a href="#product1" class="readmore">Read More</a>
+                </div>
+            </div>
+            <div class="pro">
+                <img src="aidogroup.jpg" alt="">
+                <div class="desc">
+                    <span>Wedding Photography</span>
+                    <h5>Wedding Paket 1</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae.</p>
+                    <!-- read more -->
+                    <a href="#product1" class="readmore">Read More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end services -->
+    <!-- footer start -->
+    <section id="contact" class="footer">
+        <footer class="section-p1">
+            <div class="col">
+                <a href="#" class="logo">
+                    <img src="aidogroup.jpg" alt="logo">
+                    AIDO<span>GROUP</span>
+                </a>
+                <h4>Contact</h4>
+                <p><strong>Alamat: </strong>Dusun Klewer RT 12 RW 03, Desa Sumberagung, Kecamatan Kepohbaru, Kab.
+                    Bojonegoro, Jawa Timur, 62194</p>
+                <p><strong>Phone: </strong>0822-2222-xxxx</p>
+                <p><strong>Jam: </strong>08:00 - 20:00 WIB</p>
+                <div class="follow">
+                    <h4>Follow Us</h4>
+                    <a href="facebook.com"><i class="fab fa-facebook-f"></i></a>
+                    <a href="instagram.com"><i class="fab fa-instagram"></i></a>
+                    <a href="youtube.com"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="col">
+                <h4>Quick Links</h4>
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#product1">Services</a>
+                <a href="#contact">Contact</a>
+        </footer>
+    </section>
+
+
+
+
+
     <script src="app.js"></script>
 </body>
+
 </html>
