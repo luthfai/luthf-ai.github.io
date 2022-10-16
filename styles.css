@@ -38,6 +38,10 @@ body{
     overflow-x: hidden;
     background: var(--white);
 }
+
+.wrapper{
+    overflow-x: hidden;
+}
 html::-webkit-scrollbar{
     background-color: #aaa;
     width: 1rem;
@@ -431,7 +435,7 @@ footer .col p{
 .home .manual-slide{
     position: absolute;
     z-index: 100;
-    bottom: 17rem;
+    top: 80vh;
     left: 50%;
     transform: translateX(-50%);
     display: flex;
@@ -470,7 +474,7 @@ footer .col p{
     transform: translateX(-50%);
     justify-content: center;
     align-items: center;
-    bottom: 17rem;
+    top : 80vh;
     left: 50%;
 }
 
