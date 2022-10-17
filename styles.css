@@ -551,6 +551,9 @@ footer .col p{
         align-items: center;
         width: 90%;
     }
+    .footer .col{
+        width: 100%;
+    }
 }
 
 @media (max-width:450px){
