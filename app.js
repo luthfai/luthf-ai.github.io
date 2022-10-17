@@ -1,14 +1,5 @@
 let navbar = document.querySelector('.header .navbar');
 let menuBtn = document.querySelector('#menu-btn');
-var navBtn = document.querySelector('.header .navbar a');
-
-for(let i = 0; i < navBtn.length; i++){
-    navBtn[i].addEventListener('click', function(){
-        var current = document.querySelector('.header .navbar .focus');
-        current.classList.remove('focus');
-        this.classList.add('focus');
-    });
-}
 
 
 menuBtn.addEventListener('click', () => {
@@ -24,4 +15,4 @@ setInterval(function(){
     if(counter > 3){
         counter = 1;
     }
-}, 3000);
+}, 5000);
