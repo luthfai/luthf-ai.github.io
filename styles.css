@@ -138,6 +138,7 @@ section{
     border-bottom: 2px solid var(--maroon);
 }
 .home{
+    overflow-y: hidden;
     padding: 0;
     overflow-x: hidden;
 }
@@ -186,7 +187,7 @@ section{
     font-size: 2rem;
     color: var(--light-white);
     display: block;
-    margin-bottom: 40rem;
+    margin-bottom: 50vh;
     letter-spacing: 2.5rem;
     text-transform: uppercase;
 
@@ -269,6 +270,43 @@ section{
 .about .image img{
     width: 100%;
     height: 100%;
+    border-radius: 20px;
+}
+
+.about-img{
+    width: 20%;
+    object-fit: cover;
+
+}
+
+.about-img img{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+.title{
+    font-size: 3rem;
+    color: var(--maroon);
+    text-align: center;
+    margin-bottom: 5rem;
+    display: absolute;
+    width: 100%;
+}
+
+.about-page{
+    padding: 3rem 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--white);
+}
+.about-page h1{
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: 4px;
+    color: var(--maroon);
 }
 
 #product1 .pro-container{
